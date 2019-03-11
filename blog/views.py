@@ -4,13 +4,13 @@ from django.http import HttpResponse
 posts = [
 
     {
-        "text":"text value 1",
+        "name":"name value 1",
         "textA":"text value 2",
         "textB":"text value 3"
     },
     {
 
-        "text":"text value 01",
+        "name":"name value 01",
         "textD":"text value 02 ",
         "textF":"text value 03"
     }
@@ -22,4 +22,4 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html',{'title': "About"})

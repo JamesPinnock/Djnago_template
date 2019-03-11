@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    {% if title %}
+        <title>Blog - {{title}} </title>
+    {% else %}
+        <title> Home </title>
+    {% endif %}
+
 </head>
 <body>
 <h1> Blog Home</h1>
+
+{% for post in posts %}
+    <h1>{{post.name}}</h1>
+{% endfor%}
+
+
 </body>
 </html>
