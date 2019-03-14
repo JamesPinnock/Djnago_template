@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends "blog/base.html" %}
 
-     {% if title %}
-        <title>Blog - {{title}} </title>
-    {% else %}
-         <title>About Page</title>
-    {% endif %}
+<h1> Blog Home</h1>
+
+    {% block content %}
+        </head>
+            <body>
+                <h1> Blog About</h1>
+
+                <p> Hello </p>
+            </body>
 
 
-</head>
-<body>
-<h1> Blog About</h1>
-</body>
-</html>
+        </html>
+
+    {% endblock %}
