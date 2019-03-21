@@ -10,7 +10,7 @@ posts = [
     },
     {
 
-        "name":"name value 01",
+        "name":"name stand",
         "textD":"text value 02 ",
         "textF":"text value 03"
     }
