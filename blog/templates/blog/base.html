@@ -26,13 +26,17 @@
             <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
+            {% if user.is_authenticated %}
             <li class="active"><a href="{% url 'blog-home' %}">Home</a></li>
             <li><a href="{% url 'blog-home' %}">Home</a></li>
             <li><a href="{% url 'blog-about' %}">About</a></li>
             <li><a href="#">None</a></li>
+            <li><a href="{% url 'profile' %}">Profile</a></li>
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+            {% else %}
             <li><a href="{% url 'login' %}">Log in</a></li>
             <li><a href="{% url 'register' %}">Register</a></li>
-            <li><a href="{% url 'logout' %}">Log out</a></li>
+            {% endif %}
         </ul>
     </div>
 </nav>
