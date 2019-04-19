@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 
 
+
 class Vehicle(models.Model):
     name = models.CharField(max_length=100)
     platenumber = models.CharField(max_length=9)
